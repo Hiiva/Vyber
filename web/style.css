@@ -406,30 +406,39 @@ nav .nav-links a:hover {
 /* ===== FAQ ===== */
 .faq {
     padding: 6rem 4rem;
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .faq h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq .section-sub {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
 }
 
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .faq-item {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+    border-color: var(--accent);
 }
 
 .faq-item summary {
@@ -463,6 +472,7 @@ nav .nav-links a:hover {
     padding: 0 1.5rem 1.25rem;
     color: var(--text-secondary);
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 /* ===== Download ===== */
@@ -694,6 +704,7 @@ footer {
     .features,
     .screenshot-section,
     .setup,
+    .faq,
     .download {
         padding: 4rem 1.5rem;
     }
